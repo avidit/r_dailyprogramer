@@ -1,21 +1,22 @@
 """
-https://goo.gl/EGPTte
+https://redd.it/56tbds
 
 Description
 
 Write a function that, given a 4-digit number, returns the largest digit in that
-number. Numbers between 0 and 999 are counted as 4-digit numbers with leading 0's.
+number. Numbers between 0 and 999 are counted as 4-digit numbers with leading
+0's.
 
 Bonus 1
-Write a function that, given a 4-digit number, performs the "descending digits"
-operation. This operation returns a number with the same 4 digits sorted in
-descending order.
+Write a function that, given a 4-digit number, performs the "descending
+digits" operation. This operation returns a number with the same 4 digits sorted
+in descending order.
 
 Bonus 2
-Write a function that counts the number of iterations in Kaprekar's Routine,
-which is as follows. Given a 4-digit number that has at least two different
-digits, take that number's descending digits, and subtract that number's
-ascending digits.
+Write a function that counts the number of iterations in Kaprekar's
+Routine, which is as follows. Given a 4-digit number that has at least two
+different digits, take that number's descending digits, and subtract that
+number's ascending digits.
 """
 
 def largest_digit(num):

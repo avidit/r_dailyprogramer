@@ -85,7 +85,7 @@ stop_words = [
 def alit(sentence):
 	alit = []
 	words = sentence.split()
-	words = [w for w in words if w.lower() not in stop_words]
+	words = [w.lower() for w in words if w.lower() not in stop_words]
 	for i, word in enumerate(words[:-1], start = 1):
 		if (word[0] == words[i][0]):
 			if word not in alit: alit.append(word)

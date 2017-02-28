@@ -1,17 +1,17 @@
 opr = {
-	+': lambda b, a: a + b,
+	'+': lambda b, a: a + b,
 	'-': lambda b, a: a - b,
-      	'*': lambda b, a: a * b,
-      	'x': lambda b, a: a * b,
-      	'/': lambda b, a: a / b,
-      	'//': lambda b, a: a // b,
-      	'%': lambda b, a: a % b,
-      	'^': lambda b, a,: a ** b
+	'*': lambda b, a: a * b,
+    'x': lambda b, a: a * b,
+	'/': lambda b, a: a / b,
+	'//': lambda b, a: a // b,
+	'%': lambda b, a: a % b,
+	'^': lambda b, a,: a ** b
 }
 
 
 def factorial(x):
-    return x * factorial(x - 1) if x > 1 else 1
+	return x * factorial(x - 1) if x > 1 else 1
 
 
 def rpn(input_data):

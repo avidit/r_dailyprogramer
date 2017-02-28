@@ -2,7 +2,7 @@ opr = {
 	'+': lambda b, a: a + b,
 	'-': lambda b, a: a - b,
 	'*': lambda b, a: a * b,
-    'x': lambda b, a: a * b,
+	'x': lambda b, a: a * b,
 	'/': lambda b, a: a / b,
 	'//': lambda b, a: a // b,
 	'%': lambda b, a: a % b,

@@ -1,26 +1,25 @@
 import turtle
 
-
-def draw_outline(poly, n, length = 50, color = 'red', speed = 5):
+def draw_outline(poly, n, length=50, color="red", speed=5):
     poly.color(color)
     poly.speed(speed)
-    for i in range(n):
+    for _ in range(n):
         poly.forward(length)
-        poly.left(360.0 / n) 
+        poly.left(360.0 / n)
 
 
-def draw_star(poly, n, skip, color = 'blue', speed = 5):
+def draw_star(poly, n, skip, color="blue", speed=5):
     poly.color(color)
     poly.speed(speed)
     v = 0
     verts = poly.get_poly()
-    for i in range(n):
+    for _ in range(n):
         v = v + skip
         if v >= n:
             v = v - n
-            poly.goto(verts[v])
+            poly.goto(verts[int(v)])
         else:
-            poly.goto(verts[v])
+            poly.goto(verts[int(v)])
 
 
 def draw_poly(n):
